@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
-  <title>Frontend Mentor | Interactive card details form</title>
+  <title>Interactive card details form</title>
 <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
@@ -15,9 +15,9 @@
       <div class="left-side">
         <div class="cards">
           <div class="front-card">
-            <img src="./images/bg-card-front.png" alt="front view of card">
+            <img class="card-logo" src="./images/card-logo.svg" alt="card logo">
             <div class="card-details">
-              <img src="./images/card-logo.svg" alt="card logo">
+              <img src="./images/bg-card-front.png" alt="front view of card">
               <h1 class="card-number">0000 0000 0000 0000</h1>
               <div class="name-details">
                 <span class="name">Jane Appleseed</span>
@@ -45,6 +45,7 @@
             <label for="card-number">Card Number</label>
             <input type="text" placeholder="e.g. 1234 5678 9123 0000" id="card_number" minlength="16" maxlength="16" required>
           </div>
+          <div class="card-info">
           <div class="card-exp-date">
             <label for="exp-date">Exp. Date (MM/YY)</label>
             <div class="exp">
@@ -55,16 +56,15 @@
                 <input type="number" placeholder="YY" minlength="2" maxlength="2" id="card_year" required>
               </div>  
             </div>
+          </div>
             <div class="cvc-form">
               <label for="card-cvc">CVC</label>
               <input type="number" minlength="3" maxlength="3" placeholder="e.g. 123" id="cvc" required>
             </div>
           </div>
-          <div>
             <button id="submit-btn" type="submit">Confrim</button>
-          </div>
         </form>
-        <div class="thank-you" hidden>
+        <div class="thank-you hidden">
           <img src="./images/icon-complete.svg" alt="Message pops up when form is completed.">
           <h1>Thank You!</h1>
           <p>We've added your card details</p>
@@ -73,11 +73,6 @@
       </div>
     </div>
   </main>
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Umar Hussain</a>.
-  </div>
   <script src="./main.js"></script>
 </body>
 </html>
